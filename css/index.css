@@ -42,7 +42,7 @@ body {
     padding:0px;
 }
 
-#chessBoard tr td:empty:hover #chessBoard tr td div:hover, .selected {
+#chessBoard tr td:empty:hover, #chessBoard tr td div:hover, .selected {
     background-color:#3C7DAB !important;
 }
 
