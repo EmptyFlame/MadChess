@@ -1,4 +1,5 @@
 var allSet = false;
+var team = 'white';
 
 var chessSet = 
 {
