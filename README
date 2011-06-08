@@ -7,5 +7,5 @@ What has to be done:
 - Game logic
     - UI speciffic stuff
     - Implement rules for all chess pieces
-    - Create structured JSON that has all game data *
+    - Create structured JSON that has all game data +
 - Game server (NodeJS)
