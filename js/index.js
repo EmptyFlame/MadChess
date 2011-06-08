@@ -10,7 +10,7 @@ function setBoard() {
         allSet = true;
     }
 }
-//This function will moove the chess piece to desired coordinates (in the coordinate system of a chess board - #chessBoard)
+//This function will move the chess piece to desired coordinates (in the coordinate system of a chess board - #chessBoard)
 function movePiece(victim, x, y){
     var target = $('#chessBoard tr:nth-child('+y+') td:nth-child('+x+')');
     victim.appendTo(target);
