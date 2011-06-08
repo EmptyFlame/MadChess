@@ -1,0 +1,11 @@
+This is a little project that has goal to make an online game of chess, by using HTML5, CSS3, JavaScript/jQuery and NodeJS.
+
+What has to be done:
+*(pending), +(done)
+
+- User interface +
+- Game logic
+    - UI speciffic stuff
+    - Implement rules for all chess pieces
+    - Create structured JSON that has all game data *
+- Game server (NodeJS)
