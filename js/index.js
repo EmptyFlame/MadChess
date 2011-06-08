@@ -33,5 +33,7 @@ function whatToDo(piece){
         if((piece.attr('class').split(' ')[1] === team)&&((!($('.selected').length))||(($('.selected').length)&&($('.selected').attr('id') === piece.attr('id'))))){
            piece.toggleClass('selected');
         }
+    } else {
+        
     }
 }
