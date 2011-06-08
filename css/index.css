@@ -50,7 +50,52 @@ body {
     background-color:#333;
 }
 
+#chessBoard tr td div {
+    width:69px;
+    height:69px;
+    margin:0 auto;
+    background-size:100%;
+}
 
+/*Chess Pieces Textures*/
+/*White*/
+.pawn.white {
+    background:url(../assets/pieces/pawn/white.png);
+}
+.rook.white {
+	background:url(../assets/pieces/rook/white.png);
+}
+.horse.white {
+	background:url(../assets/pieces/horse/white.png);
+}
+.blackishop.white {
+	background:url(../assets/pieces/bishop/white.png);
+}
+.queen.white {
+	background:url(../assets/pieces/queen/white.png);
+}
+.king.white {
+	background:url(../assets/pieces/king/white.png);
+}
+/*Black*/
+.pawn.black {
+	background:url(../assets/pieces/pawn/black.png);
+}
+.rook.black {
+	background:url(../assets/pieces/rook/black.png);
+}
+.horse.black {
+	background:url(../assets/pieces/horse/black.png);
+}
+.blackishop.black {
+	background:url(../assets/pieces/bishop/black.png);
+}
+.queen.black {
+	background:url(../assets/pieces/queen/black.png);
+}
+.king.black {
+	background:url(../assets/pieces/king/black.png);
+}
 
 
 
