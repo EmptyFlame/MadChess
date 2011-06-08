@@ -27,13 +27,29 @@ function movePiece(victim, x, y){
 }
 
 //What to do when we click on one of fields
-function whatToDo(piece){
+function whatToDo(target){
+    var piece = target.find('div');
     if(piece.length){
         //If the chess piece is from the same team (black/white)
         if((piece.attr('class').split(' ')[1] === team)&&((!($('.selected').length))||(($('.selected').length)&&($('.selected').attr('id') === piece.attr('id'))))){
            piece.toggleClass('selected');
         }
     } else {
-        
+        movePiece($('.selected'),target.closest('td').index() + 1,target.closest('tr').index() + 1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
