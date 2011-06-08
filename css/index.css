@@ -31,6 +31,8 @@ body {
     height:600px;
     background:#fff;
     border-spacing:0;
+    
+    box-shadow:0 0 3px rgba(0, 0, 0, .75);
 }
 
 #chessBoard tr td {
@@ -40,8 +42,8 @@ body {
     padding:0px;
 }
 
-#chessBoard tr td:empty:hover {
-    background-color:#
+#chessBoard tr td:empty:hover #chessBoard tr td div:hover, .selected {
+    background-color:#3C7DAB !important;
 }
 
 #chessBoard tr:nth-child(even) td:nth-child(odd), #chessBoard tr:nth-child(odd) td:nth-child(even) {
