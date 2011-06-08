@@ -317,6 +317,54 @@ var chessSet =
             "x":3,
             "y":1
         }
+    },
+    //White queen
+    "q-w-l":{
+        "role":"queen",
+        "team":"white",
+        "virgin":true,
+        "lastMoved":0,
+        "babySteps":0,
+        "position":{
+            "x":4,
+            "y":8
+        }
+    },
+    //Black queen
+    "q-b-r":{
+        "role":"queen",
+        "team":"black",
+        "virgin":true,
+        "lastMoved":0,
+        "babySteps":0,
+        "position":{
+            "x":4,
+            "y":1
+        }
+    },
+    //White king
+    "k-w":{
+        "role":"king",
+        "team":"white",
+        "virgin":true,
+        "lastMoved":0,
+        "babySteps":0,
+        "position":{
+            "x":5,
+            "y":8
+        }
+    },
+    //Black king
+    "k-b":{
+        "role":"king",
+        "team":"black",
+        "virgin":true,
+        "lastMoved":0,
+        "babySteps":0,
+        "position":{
+            "x":5,
+            "y":1
+        }
     }
 };
 

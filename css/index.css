@@ -68,7 +68,7 @@ body {
 .horse.white {
 	background:url(../assets/pieces/horse/white.png);
 }
-.blackishop.white {
+.bishop.white {
 	background:url(../assets/pieces/bishop/white.png);
 }
 .queen.white {
@@ -87,7 +87,7 @@ body {
 .horse.black {
 	background:url(../assets/pieces/horse/black.png);
 }
-.blackishop.black {
+.bishop.black {
 	background:url(../assets/pieces/bishop/black.png);
 }
 .queen.black {
