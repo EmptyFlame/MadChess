@@ -35,12 +35,16 @@ function whatToDo(target){
            piece.toggleClass('selected');
         }
     } else {
-        movePiece($('.selected'),target.closest('td').index() + 1,target.closest('tr').index() + 1);
+        if(itsLegal()){
+            movePiece($('.selected'),target.closest('td').index() + 1,target.closest('tr').index() + 1);
+        }
     }
 }
 
-
-
+//Function that chooses what rule should be checked according to a role of a figure
+function itsLegal(){
+    
+}
 
 
 
