@@ -35,17 +35,46 @@ function whatToDo(target){
            piece.toggleClass('selected');
         }
     } else {
-        if(itsLegal()){
+        //Move to an empty field
+        if(itsLegal(target, "move")){
             movePiece($('.selected'),target.closest('td').index() + 1,target.closest('tr').index() + 1);
         }
     }
 }
 
 //Function that chooses what rule should be checked according to a role of a figure
-function itsLegal(){
-    
+function itsLegal(target, action){
+    var selected = chessSet[$('.selected').attr('id')];
+    switch(selected.role){
+        case "pawn":
+            pawnRule(target, action);
+        break;
+        
+        default:
+            return true;
+    }
 }
 
+function pawnRule(target, action) {
+    var selected = chessSet[$('.selected').attr('id')];
+    //Our pawn coordinates
+    var px = chessSet[$('.selected').attr('id')].position.x;
+    var py = chessSet[$('.selected').attr('id')].position.y;
+    //Targeted area coordinates
+    var tx = target.index();
+    var ty = target.closest('tr').index();
+    
+    if((action === "move")){
+        //Just fooling around a bit with this super looong if statements, I was bored. I'll remodel this soon, I promise :)
+        if( ((selected.team === "white")&&(((py - ty)===1)&&(px === tx)))||((selected.team === "black")&&(((py - ty)=== -1)&&(px === tx))) ){
+            return true;
+        } else if(selected.virgin&&((selected.team === "white")&&((px === tx)&&((py - ty) === 2)&&($('#chessBoard tr:nth-child('+(py-1)+') td:nth-child('+px+')').length === 0)))||(((selected.team === "black")&&((px === tx)&&((py - ty) === -2)&&($('#chessBoard tr:nth-child('+(py+1)+') td:nth-child('+px+')').length === 0))))){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
 
 
 
