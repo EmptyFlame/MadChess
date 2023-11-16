@@ -1,6 +1,41 @@
-/* var allSet = false;
+
+var allSet = false;
 var team = 'white';
-var move = 0; */
+var move = 0;
+
+const usedWNumbers = new Set();
+const usedBNumbers = new Set();
+
+
+function generateWRandomNumber() {
+    let randomNum;
+    do {
+        randomNum = Math.floor(Math.random() * 8) + 1;
+    } while (usedWNumbers.has(randomNum));
+
+    usedWNumbers.add(randomNum);
+
+    return randomNum;
+}
+
+function generateBRandomNumber() {
+    let randomNum;
+    do {
+        randomNum = Math.floor(Math.random() * 8) + 1;
+    } while (usedBNumbers.has(randomNum));
+
+    usedBNumbers.add(randomNum);
+
+    return randomNum;
+}
+
+function resetWUsedNumbers() {
+    usedWNumbers.clear();
+}
+
+function resetBUsedNumbers() {
+    usedBNumbers.clear();
+}
 
 var chessSet = 
 {
@@ -190,7 +225,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":1,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -201,7 +236,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":8,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -213,7 +248,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":8,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -224,7 +259,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":1,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -236,7 +271,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":2,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -247,7 +282,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":7,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -259,7 +294,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":7,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -270,7 +305,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":2,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -282,7 +317,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":3,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -293,7 +328,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":6,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -305,7 +340,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":6,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -316,7 +351,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":3,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -328,7 +363,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":4,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -340,7 +375,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":4,
+            "x":generateBRandomNumber(),
             "y":1
         }
     },
@@ -352,7 +387,7 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":5,
+            "x":generateWRandomNumber(),
             "y":8
         }
     },
@@ -364,26 +399,8 @@ var chessSet =
         "lastMoved":0,
         "babySteps":0,
         "position":{
-            "x":5,
+            "x":generateBRandomNumber(),
             "y":1
         }
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
