@@ -1,7 +1,4 @@
 
-var allSet = false;
-var team = 'white';
-var move = 0;
 
 const usedWNumbers = new Set();
 const usedBNumbers = new Set();

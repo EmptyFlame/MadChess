@@ -2,6 +2,7 @@
 var allSet = false; // Assuming this variable is defined elsewhere in your code
 var team = "white"; // Initialize the starting team
 
+
 // Function to set up the chessboard
 function setBoard() {
     if (!allSet) {
@@ -214,3 +215,15 @@ function isPathClear(startX, startY, endX, endY) {
     }
     return true;
 }
+
+module.exports = {
+    pawnRule,
+    knightRule,
+    rookRule,
+    bishopRule,
+    kingRule,
+    queenRule,
+    setBoard,
+    whatToDo,
+    movePiece
+  };

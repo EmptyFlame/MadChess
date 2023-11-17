@@ -1,0 +1,22 @@
+.box{
+    background-color: #3C7DAB;
+    border-radius: 15px;
+    border-color: #2d2d2d 2px;
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://c.tenor.com/pbVaJ3JVt8IAAAAC/elmo-fire.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    margin: 125px;
+    color:orange
+}
