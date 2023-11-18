@@ -1,6 +1,6 @@
-var allSet = false;
+/* var allSet = false;
 var team = 'white';
-var move = 0;
+var move = 0; */
 
 var chessSet = 
 {
